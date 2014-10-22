@@ -22,6 +22,10 @@ function demo_flickr_importer_feeds_importer_default() {
       'config' => array(
         'allowed_extensions' => 'txt csv tsv xml opml',
         'direct' => FALSE,
+        'directory' => 'public://feeds',
+        'allowed_schemes' => array(
+          0 => 'public',
+        ),
       ),
     ),
     'parser' => array(
@@ -34,7 +38,6 @@ function demo_flickr_importer_feeds_importer_default() {
     'processor' => array(
       'plugin_key' => 'FeedsNodeProcessor',
       'config' => array(
-        'content_type' => 'image',
         'expire' => '-1',
         'author' => '1',
         'authorize' => 1,
@@ -98,6 +101,7 @@ function demo_flickr_importer_feeds_importer_default() {
         'update_existing' => '0',
         'input_format' => 'filtered_html',
         'skip_hash_check' => 0,
+        'bundle' => 'image',
       ),
     ),
     'content_type' => '',
