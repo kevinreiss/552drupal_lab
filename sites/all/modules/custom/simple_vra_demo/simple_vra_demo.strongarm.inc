@@ -362,5 +362,33 @@ function simple_vra_demo_strongarm() {
   $strongarm->value = 0;
   $export['node_submitted_vra_work'] = $strongarm;
 
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'pathauto_node_image_pattern';
+  $strongarm->value = 'images/[node:nid]';
+  $export['pathauto_node_image_pattern'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'pathauto_node_license_pattern';
+  $strongarm->value = 'licenses/[node:title]';
+  $export['pathauto_node_license_pattern'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'pathauto_node_vra_collection_pattern';
+  $strongarm->value = 'collections/[node:title]';
+  $export['pathauto_node_vra_collection_pattern'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'pathauto_node_vra_work_pattern';
+  $strongarm->value = 'work/[node:title]';
+  $export['pathauto_node_vra_work_pattern'] = $strongarm;
+
   return $export;
 }
