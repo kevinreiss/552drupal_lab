@@ -13,9 +13,9 @@ function simple_vra_demo_taxonomy_default_vocabularies() {
       'name' => 'Image Tags',
       'machine_name' => 'image_tags',
       'description' => 'Free tags assigned to imported image content',
-      'hierarchy' => '0',
+      'hierarchy' => 0,
       'module' => 'taxonomy',
-      'weight' => '0',
+      'weight' => 0,
       'rdf_mapping' => array(
         'rdftype' => array(
           0 => 'skos:ConceptScheme',
@@ -36,9 +36,9 @@ function simple_vra_demo_taxonomy_default_vocabularies() {
       'name' => 'Image Work Types',
       'machine_name' => 'image_work_types',
       'description' => '',
-      'hierarchy' => '0',
+      'hierarchy' => 0,
       'module' => 'taxonomy',
-      'weight' => '0',
+      'weight' => 0,
       'rdf_mapping' => array(
         'rdftype' => array(
           0 => 'skos:ConceptScheme',
@@ -59,9 +59,9 @@ function simple_vra_demo_taxonomy_default_vocabularies() {
       'name' => 'Locations',
       'machine_name' => 'places',
       'description' => 'Geographic Locations, Cities, Towns, etc.',
-      'hierarchy' => '0',
+      'hierarchy' => 0,
       'module' => 'taxonomy',
-      'weight' => '0',
+      'weight' => 0,
       'rdf_mapping' => array(
         'rdftype' => array(
           0 => 'skos:ConceptScheme',
@@ -82,9 +82,9 @@ function simple_vra_demo_taxonomy_default_vocabularies() {
       'name' => 'Work Types',
       'machine_name' => 'vra_work_types',
       'description' => 'Work Types for VRA Core',
-      'hierarchy' => '0',
+      'hierarchy' => 0,
       'module' => 'taxonomy',
-      'weight' => '0',
+      'weight' => 0,
       'rdf_mapping' => array(
         'rdftype' => array(
           0 => 'skos:ConceptScheme',
